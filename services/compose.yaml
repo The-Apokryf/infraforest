@@ -1,0 +1,14 @@
+include:
+  - ./libretranslate/compose.yaml
+  - ./nextcloud/compose.yaml
+  - ./ollama/compose.yaml
+  - ./n8n/compose.yaml
+  - ./gitea/compose.yaml
+  - ./openwebui/compose.yaml
+  - ./fileflows/compose.yaml
+  - ./mysql/compose.yaml
+  - ./postgres/compose.yaml
+  - ./traefik/compose.yaml
+  - ./dnsmasq/compose.yaml
+  # - ./qbittorrent/compose.yaml
+  - ./adminer/compose.yaml

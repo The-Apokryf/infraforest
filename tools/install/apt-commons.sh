@@ -1,0 +1,1 @@
+sudo apt install openssh-server openssh-client python3 python3-pip nodejs npm nmap tshark git gh virtualbox

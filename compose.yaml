@@ -1,0 +1,7 @@
+name: infraforest # deployment of Skriptonus Prime
+
+include:
+  - ./resources/compose.yaml
+  #- ./apps/networking/compose.yaml
+  - ./services/compose.yaml
+

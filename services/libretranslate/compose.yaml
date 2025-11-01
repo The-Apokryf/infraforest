@@ -1,0 +1,14 @@
+services:
+  libretranslate:
+    image: libretranslate/libretranslate:latest
+    ports:
+      - "5001:5000"
+    restart: unless-stopped
+    volumes:
+      - libretranslate_dir:/home/libretranslate/.local:rw
+    healthcheck:
+      test: ['CMD-SHELL', './venv/bin/python scripts/healthcheck.py']
+      interval: 10s
+      timeout: 4s
+      retries: 4
+      start_period: 5s

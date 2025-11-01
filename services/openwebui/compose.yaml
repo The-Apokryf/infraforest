@@ -1,0 +1,15 @@
+services:
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:cuda
+    restart: always
+    ports:
+      - "8083:8080"
+    volumes:
+      - openwebui_dir:/app/backend/data
+    # extra_hosts:
+    #   - "host.docker.internal:host-gateway"
+    depends_on:
+      - ollama
+    environment:
+      # configure your app to talk to ollama via service name
+      OLLAMA_URL: http://ollama:11434

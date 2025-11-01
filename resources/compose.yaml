@@ -1,0 +1,68 @@
+volumes:
+  mysql_dir:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./mysql_dir/
+  qbittorrent_dir:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./qbittorrent_dir/
+  fileflows_dir:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./fileflows_dir/
+  nextcloud_dir:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./nextcloud_dir/
+  gitea_dir:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./gitea_dir/
+  ollama_dir:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./ollama_dir/
+  libretranslate_dir:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./libretranslate_dir/
+  n8n_dir:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./n8n_dir/
+  openwebui_dir:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./openwebui_dir/
+# volumes:
+#   open-webui:
+#     driver: local
+#     driver_opts:
+#       type: none
+#       o: bind
+#       device: /mnt/sftp/open-webui
+#   ollama:
+#     driver: local
+#     driver_opts:
+#       type: none
+#       o: bind
+#       device: /mnt/sftp/ollama

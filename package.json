@@ -1,0 +1,31 @@
+{
+  "name": "infraforest",
+  "version": "1.0.0",
+  "description": "Apokryf's infrastructural setup",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "task"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sarverott/infraforest.git"
+  },
+  "keywords": [
+    "apokryf"
+  ],
+  "author": "Sett Sarverott",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sarverott/infraforest/issues"
+  },
+  "homepage": "https://github.com/Sarverott/infraforest#readme",
+  "dependencies": {
+    "@go-task/cli": "^3.45.4",
+    "dockerode": "^4.0.9",
+    "husky": "^9.1.7"
+  },
+  "devDependencies": {
+    "composerize": "^1.7.5",
+    "decomposerize": "^1.4.4"
+  }
+}

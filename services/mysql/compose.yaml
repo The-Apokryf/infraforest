@@ -1,0 +1,10 @@
+
+services:
+  mysql:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: omnismoriatur
+    # volumes:
+    #   mysql_dir:/var/lib/mysql
+    # (this is just an example, not intended to be a production configuration)

@@ -1,0 +1,17 @@
+services:
+  fileflows:
+    image: revenz/fileflows
+    restart: unless-stopped
+    #runtime: nvidia
+    ports:
+      - "8085:5000"
+    #environment:
+      #- TempPathHost=./process_dir
+    #  - NVIDIA_DRIVER_CAPABILITIES=compute,video,utility
+    #  - NVIDIA_VISIBLE_DEVICES=all
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      #- ./process_dir:/temp
+      - fileflows_dir:/app/Data
+      #- ./logs_files:/app/Logs
+

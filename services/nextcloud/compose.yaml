@@ -1,0 +1,8 @@
+services:
+  nextcloud:
+    image: nextcloud
+    restart: always
+    ports:
+      - 8081:80
+    volumes:
+      - nextcloud_dir:/var/www/html
